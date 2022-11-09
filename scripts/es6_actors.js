@@ -34,13 +34,8 @@ let academyMembers = [
 
 
   // Who has have been in at least 3 films?
-let actorWith3Films = academyMembers.find(arrayValue => arrayValue.films >= "3");
-if (actorWith3Films >= 3) {
-    console.log("This actor has been in 3+ movies " + academyMember[i].name);
-}
-else {
-    console.log(" No one is in 3+ movies ");
-}
+let actorWith3Films = academyMembers.filter((num) => num.films.length >= 3);
+actorWith3Films.forEach((num) => console.log(" These actors have been in more than 3+ movies: " + num.name));
 
 
 
