@@ -78,3 +78,6 @@ let courses = [
     function under50(value) {
         return (Number(value.Fee) <= 50);
     }
+
+
+   

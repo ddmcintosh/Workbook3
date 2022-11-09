@@ -25,12 +25,16 @@ let academyMembers = [
     ];
 
  // Who is the Academy Member whose ID is 187?
- let memID187 = academyMembers.filter( a => a.memID == 187);
- for ( let i = 0; i < memID187.length; i++) {
-     console.log(memID187[i].name);
+ let memId187 = academyMembers.filter(a => a.memID == "187");
+ for (let i = 0; i < memId187.length; i++) {
+    console.log(" This actor has a member id of 187: " + memId187[i].name);
  }
-// Who has have been in at least 3 films?
-let actorWith3Films = academyMembers.find((arrayValue => arrayValue.films >= "3");
+
+
+
+
+  // Who has have been in at least 3 films?
+let actorWith3Films = academyMembers.find(arrayValue => arrayValue.films >= "3");
 if (actorWith3Films >= 3) {
     console.log("This actor has been in 3+ movies " + academyMember[i].name);
 }
@@ -38,6 +42,12 @@ else {
     console.log(" No one is in 3+ movies ");
 }
 
+
+
 // Who has a name that starts with "Bob"?
+let findBob = academyMembers.filter((arrayValue) => arrayValue.name.slice(0,3) == "Bob");
+for ( let i = 0; i < findBob.length; i++) {
+    console.log(" These are the actors with Bob in their name " + findBob[i].name);
+}
 // HARDER: Which Academy Members have been in a film
 // that starts with "A"
